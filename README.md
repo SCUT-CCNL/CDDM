@@ -1,7 +1,42 @@
 # Car Damage Detection Based on Multi-View Fusion and Alignment: Dataset and Method
 
-This is the official code of CDDM dataset. 
+This is the official code of Car Damage Detection Multi-view (CDDM) dataset. 
 Paper web page: [Car Damage Detection Based on Multi-View Fusion and Alignment: Dataset and Method](https://ieeexplore.ieee.org/document/10904063).
+
+## Dataset 
+The CDDM is the first publicly available multiview dataset, which combines the following properties:
+
+1) Paired multi-view image: Each car in the CDDM dataset is accompanied by multiple images captured from different perspectives, including at least one distant-view and one close-up view, in a one-to-one correspondence.
+
+2) Damage severity type: 9 damaged components (front bumper, rear bumper, front fender, rear fender, hood, rear door, front door, trunk lid, headlights) and 3 damage severity types (scratches, dents, cracks), resulting in comprehensive coverage of 27 (9 × 3) annotation types.
+
+3) Data volume: It contains 4414 pairs, each consisting of one close-up image and one distant-view image.
+
+4) Multiple tasks: Our dataset encompasses three distinct tasks: classification of damage types, detection of damage components, and segmentation of damage areas.
+
+## Dataset DOWNLOADING
+
+NOTE: For downloading the data, please first fill in the licensing form and send us to get the link. [CDDM DATASET LICENSING](https://github.com/SCUT-CCNL/CDDM/blob/main/CDDM DATASET LICENSING.docx).
+
+## Dataset Directoty
+```
+
+CDDM
+├── Train               #Train dataset total 3107 pairs                  
+│   ├── XX.jpg                   #image
+│   ├── XX.json                  #annotation
+│   ├── ...
+│   └── ...
+├── Test&Val            #Test and Val dataset total 1307 pairs                   
+│   ├── YY.jpg                   #image
+│   ├── YY.json                  #annotation
+│   ├── ...
+│   └── ...
+└── train.txt            #Train image number
+└── test.txt             #Test  image number
+└── val.txt              #Val   image number
+    
+```
 
 ##Citation
 ```
@@ -17,7 +52,7 @@ Paper web page: [Car Damage Detection Based on Multi-View Fusion and Alignment: 
   doi={10.1109/TITS.2025.3542174}}
 
 ```
+##Acknowledgment
+The preparation of the dataset used in this study—including data cleaning, annotation, and post-processing for sensitive information masking—required substantial manual effort. We gratefully acknowledge the contributions of the master's students, interns, and doctoral candidates from the Guangdong Provincial Key Laboratory of Multimodal Big Data Intelligent Analysis (MBDIA) for their dedicated work throughout this process.
+It is also important to note that the training set used in this study did not undergo sensitive information masking, whereas the publicly released dataset—including both the validation and test sets—was rigorously processed with masking procedures to ensure data compliance and security.
 
-## Dataset
-
-We are currently blurring the photos to eliminate the risk of privacy leakage. Once the process is complete, we will publish them here. Thank you for your understanding and support.
