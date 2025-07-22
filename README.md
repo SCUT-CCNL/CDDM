@@ -16,7 +16,8 @@ The CDDM is the first publicly available multiview dataset, which combines the f
 
 ## Dataset DOWNLOADING
 
-NOTE: For downloading the data, please first fill in the licensing form and send us to get the link. [CDDM DATASET LICENSING](https://github.com/SCUT-CCNL/CDDM/blob/main/CDDM DATASET LICENSING.docx).
+NOTE: For downloading the data, please first fill in the licensing form and send it to us to receive the link: [CDDM DATASET LICENSING](https://github.com/SCUT-CCNL/CDDM/blob/main/CDDM%20DATASET%20LICENSING.docx)
+
 
 ## Dataset Directoty
 ```
@@ -32,13 +33,13 @@ CDDM
 │   ├── YY.json                  #annotation
 │   ├── ...
 │   └── ...
-└── train.txt            #Train image number
-└── test.txt             #Test  image number
-└── val.txt              #Val   image number
+└── train.txt           #Train image number
+└── test.txt            #Test  image number
+└── val.txt             #Val   image number
     
 ```
 
-##Citation
+## Citation
 ```
 
 @ARTICLE{10904063,
@@ -46,13 +47,17 @@ CDDM
   journal={IEEE Transactions on Intelligent Transportation Systems}, 
   title={Car Damage Detection Based on Multi-View Fusion and Alignment: Dataset and Method}, 
   year={2025},
-  volume={},
-  number={},
-  pages={1-14},
+  volume={26},
+  number={4},
+  pages={4717-4730},
+  keywords={Automobiles;Solid modeling;Classification algorithms;Image segmentation;Feature extraction;Multitasking;Location awareness;Data mining;Three-dimensional displays;Insurance;Multi-view car damage detection;multi-view dataset;paired distant-view and close-up images;car’s component alignment;multiple tasks},
   doi={10.1109/TITS.2025.3542174}}
 
 ```
-##Acknowledgment
+
+## Acknowledgment
+
 The preparation of the dataset used in this study—including data cleaning, annotation, and post-processing for sensitive information masking—required substantial manual effort. We gratefully acknowledge the contributions of the master's students, interns, and doctoral candidates from the Guangdong Provincial Key Laboratory of Multimodal Big Data Intelligent Analysis (MBDIA) for their dedicated work throughout this process.
+
 It is also important to note that the training set used in this study did not undergo sensitive information masking, whereas the publicly released dataset—including both the validation and test sets—was rigorously processed with masking procedures to ensure data compliance and security.
 
